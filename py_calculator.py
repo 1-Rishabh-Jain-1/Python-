@@ -14,7 +14,7 @@ def multiply(x, y):
 
 # This function divides two numbers
 def divide(x, y):
-    return x y
+    return x / y # added ' / ' operator to divide the two input numbers
 
 
 print("Select operation.")
@@ -29,8 +29,8 @@ while True:
 
     # check if choice is one of the four options
     if choice in ('1', '2', '3', '4'):
-        num1 = float(("Enter first number: "))
-        num2 = float(\("Enter second number: "))
+        num1 = float(input("Enter first number: ")) # added input to take num1 as float input 
+        num2 = float(input("Enter second number: ")) # added input to take num2 as float input 
 
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
